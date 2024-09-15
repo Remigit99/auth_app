@@ -4,10 +4,10 @@ import {signupController, loginController, logoutController} from  "../controlle
 const authRoutes = express.Router()
 
 
-authRoutes.get("/signup", signupController)
+authRoutes.post("/signup", signupController)
 
-authRoutes.get("/login", loginController)
+authRoutes.post("/login", loginController)
 
-authRoutes.get("/logout", logoutController)
+authRoutes.post("/logout", logoutController)
 
 export default authRoutes;
